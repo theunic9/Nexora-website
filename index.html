@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Nexora — Digital Intelligence</title>
+<meta name="theme-color" content="#070a10">
+  <meta name="description" content="A Nexora conecta estratégia, engenharia e dados para transformar operações complexas em produtos digitais que crescem com o seu negócio.">
+<meta property="og:title" content="Nexora — Estratégia, tecnologia e produto sob a mesma direção">
+<meta property="og:description" content="Construímos experiências digitais inteligentes que conectam tecnologia, estratégia e resultados.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+</head>
+<body class="intro-active">
+
+
+
+
+  <!-- ============================================================
+       IMMERSIVE 3D GALAXY ENTRY
+  ============================================================ -->
+  <div class="intro-screen" id="introScreen" aria-label="Experiência inicial">
+    <canvas id="galaxyCanvas" aria-hidden="true"></canvas>
+    <div class="intro-vignette" aria-hidden="true"></div>
+    <div class="intro-scanlines" aria-hidden="true"></div>
+    <div class="intro-noise" aria-hidden="true"></div>
+
+    <div class="intro-ui" aria-hidden="true">
+      <span class="intro-corner tl"></span>
+      <span class="intro-corner tr"></span>
+      <span class="intro-corner bl"></span>
+      <span class="intro-corner br"></span>
+      <div class="intro-coordinates">NXR // 01<br>ORBITAL FIELD</div>
+      <div class="intro-status">SYSTEM ONLINE</div>
+    </div>
+
+    <div class="intro-content" id="introContent">
+      <div class="intro-kicker">Nexora // Digital Intelligence</div>
+      <h1 class="intro-title">
+        O futuro não espera.
+        <span class="accent">Construa-o.</span>
+      </h1>
+      <p class="intro-subtitle">
+        Tecnologia, estratégia e inteligência digital orbitando na mesma direção.
+        Explore uma nova forma de construir experiências.
+      </p>
+      <button class="intro-start" id="startExperience" type="button">
+        COMEÇAR <span class="arrow" aria-hidden="true">→</span>
+      </button>
+    </div>
+  </div>
+
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+<div class="atmosphere" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+<header id="siteHeader">
+  <div class="wrap nav">
+    <a href="#home" class="logo" aria-label="Nexora — página inicial">
+      <svg class="logo-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="16" cy="16" r="15" stroke="#4f7fff" stroke-width="1.3" opacity="0.5"/>
+        <path d="M9 21V11L23 21V11" stroke="#f4f6fb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="9" cy="11" r="1.6" fill="#4f7fff"/>
+        <circle cx="23" cy="21" r="1.6" fill="#4f7fff"/>
+      </svg>
+      NEXORA
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <ul class="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#solucoes">Soluções</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#processo">Processo</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#contato" class="btn btn-primary btn-sm">Fale conosco</a>
+      <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobilePanel">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <ul>
+    <li><a href="#home"><span>Início</span><span class="index">01</span></a></li>
+    <li><a href="#sobre"><span>Sobre</span><span class="index">02</span></a></li>
+    <li><a href="#solucoes"><span>Soluções</span><span class="index">03</span></a></li>
+    <li><a href="#diferenciais"><span>Diferenciais</span><span class="index">04</span></a></li>
+    <li><a href="#processo"><span>Processo</span><span class="index">05</span></a></li>
+    <li><a href="#depoimentos"><span>Depoimentos</span><span class="index">06</span></a></li>
+    <li><a href="#contato"><span>Contato</span><span class="index">07</span></a></li>
+  </ul>
+  <a href="#contato" class="btn btn-primary">Fale conosco</a>
+</div>
+
+<main id="main">
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow reveal in">Engenharia de produto &amp; estratégia digital</span>
+        <h1 class="h-display reveal in" style="transition-delay:.08s">Transformamos ideias complexas em <em>soluções extraordinárias.</em></h1>
+        <p class="lede reveal in" style="transition-delay:.16s">Construímos experiências digitais inteligentes que conectam tecnologia, estratégia e resultados — do primeiro diagnóstico à operação em escala.</p>
+        <div class="hero-actions reveal in" style="transition-delay:.24s">
+          <a href="#solucoes" class="btn btn-primary">Conheça nossas soluções</a>
+          <a href="#contato" class="btn btn-ghost">Fale com nossa equipe</a>
+        </div>
+        <div class="hero-meta reveal in" style="transition-delay:.32s">
+          <div><span class="n mono">10+</span><span class="l">anos de mercado</span></div>
+          <div><span class="n mono">250+</span><span class="l">projetos entregues</span></div>
+          <div><span class="n mono">15</span><span class="l">países atendidos</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-scale in" style="transition-delay:.2s" aria-hidden="true">
+        <svg viewBox="0 0 400 400">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#4f7fff" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#4f7fff" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#4f7fff" stop-opacity="0.7"/>
+              <stop offset="100%" stop-color="#4f7fff" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <circle cx="200" cy="200" r="170" fill="url(#glow)"/>
+          <g class="orbit-ring" stroke="rgba(233,238,247,0.1)" fill="none">
+            <circle cx="200" cy="200" r="150"/>
+          </g>
+          <g class="orbit-ring rev" stroke="rgba(233,238,247,0.08)" fill="none">
+            <circle cx="200" cy="200" r="110"/>
+          </g>
+          <g class="orbit-ring" stroke="rgba(79,127,255,0.18)" fill="none" style="animation-duration:120s">
+            <circle cx="200" cy="200" r="80"/>
+          </g>
+          <g stroke="url(#lineGrad)" stroke-width="1">
+            <line x1="200" y1="50" x2="200" y2="200"/>
+            <line x1="350" y1="200" x2="200" y2="200"/>
+            <line x1="90" y1="120" x2="200" y2="200"/>
+            <line x1="290" y1="310" x2="200" y2="200"/>
+            <line x1="80" y1="290" x2="200" y2="200"/>
+          </g>
+          <circle class="orbit-node" cx="200" cy="200" r="4.5" fill="#f4f6fb"/>
+          <circle class="orbit-node" cx="200" cy="50" r="3" fill="#7ba3ff"/>
+          <circle class="orbit-node" cx="350" cy="200" r="3" fill="#7ba3ff"/>
+          <circle class="orbit-node" cx="90" cy="120" r="3" fill="#7ba3ff"/>
+          <circle class="orbit-node" cx="290" cy="310" r="3" fill="#7ba3ff"/>
+          <circle class="orbit-node" cx="80" cy="290" r="3" fill="#7ba3ff"/>
+          <circle class="orbit-node" cx="200" cy="50" r="8" fill="none" stroke="#4f7fff" stroke-width="1" opacity="0.4"/>
+          <circle class="orbit-node" cx="290" cy="310" r="8" fill="none" stroke="#4f7fff" stroke-width="1" opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOBRE
+  ============================================================ -->
+  <section class="about" id="sobre">
+    <div class="wrap">
+      <div class="about-layout">
+        <div class="about-copy">
+          <span class="eyebrow reveal">Quem somos</span>
+          <h2 class="h-section reveal" style="margin-top:18px;">Pensamos além do óbvio.</h2>
+          <p class="lede reveal">Nascemos da inquietação de times de tecnologia que viam bons produtos morrerem por decisões desalinhadas entre negócio, design e engenharia.</p>
+          <p class="lede reveal">Hoje somos um time multidisciplinar que atua como extensão estratégica das empresas com quem trabalhamos — combinando visão de produto, dados e execução técnica sob a mesma direção.</p>
+        </div>
+
+        <div class="about-panel">
+          <div class="about-quote reveal">
+            “Missão, visão e valores só importam quando viram decisão de produto. É assim que operamos com cada cliente, todos os dias.”
+            <span>— Princípio orientador da Nexora</span>
+          </div>
+
+          <div class="stat-grid" id="statGrid">
+            <div class="stat reveal"><span class="num mono" data-count="10" data-suffix="+">0</span><span class="lbl">Anos de experiência</span></div>
+            <div class="stat reveal" style="transition-delay:.08s"><span class="num mono" data-count="250" data-suffix="+">0</span><span class="lbl">Projetos realizados</span></div>
+            <div class="stat reveal" style="transition-delay:.16s"><span class="num mono" data-count="98" data-suffix="%">0</span><span class="lbl">Clientes satisfeitos</span></div>
+            <div class="stat reveal" style="transition-delay:.24s"><span class="num mono" data-count="15" data-suffix="">0</span><span class="lbl">Mercados atendidos</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOLUÇÕES
+  ============================================================ -->
+  <section id="solucoes">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow reveal">O que fazemos</span>
+          <h2 class="h-section reveal" style="margin-top:18px;">Soluções construídas para escalar com o seu negócio.</h2>
+        </div>
+        <p class="lede reveal">Seis frentes de atuação que se conectam — do diagnóstico estratégico à operação contínua do produto em produção.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="svc feature reveal">
+          <div class="svc-top">
+            <span class="svc-index mono">01</span>
+            <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 19h16M7 19V9M12 19V5M17 19v-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h3>Estratégia Digital</h3>
+            <p>Diagnóstico de negócio, priorização de oportunidades e um roteiro claro de onde investir primeiro para gerar resultado mensurável.</p>
+          </div>
+          <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </article>
+
+        <article class="svc tall reveal" style="transition-delay:.06s">
+          <div class="svc-top">
+            <span class="svc-index mono">02</span>
+            <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 5l-2 14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h3>Desenvolvimento</h3>
+            <p>Produtos web e mobile construídos com arquitetura sólida, testes reais e código pensado para durar.</p>
+          </div>
+          <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </article>
+
+        <article class="svc reveal" style="transition-delay:.12s">
+          <div class="svc-top">
+            <span class="svc-index mono">03</span>
+            <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke-linecap="round"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <div>
+            <h3>Automação</h3>
+            <p>Eliminação de trabalho manual repetitivo com fluxos automatizados e integrações entre sistemas.</p>
+          </div>
+          <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </article>
+
+        <article class="svc reveal" style="transition-delay:.18s">
+          <div class="svc-top">
+            <span class="svc-index mono">04</span>
+            <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 10h16M10 20V10" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h3>Experiência do Usuário</h3>
+            <p>Interfaces que reduzem esforço e aumentam conversão, validadas com pesquisa e teste real.</p>
+          </div>
+          <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </article>
+
+        <article class="svc tall reveal" style="transition-delay:.24s">
+          <div class="svc-top">
+            <span class="svc-index mono">05</span>
+            <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 19V9M10 19V5M16 19v-6M22 19H2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h3>Dados &amp; Inteligência</h3>
+            <p>Estrutura de dados confiável e modelos analíticos que sustentam decisões — não apenas dashboards bonitos.</p>
+          </div>
+          <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </article>
+
+        <article class="svc feature reveal" style="transition-delay:.3s">
+          <div class="svc-top">
+            <span class="svc-index mono">06</span>
+            <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-4z" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h3>Consultoria</h3>
+            <p>Acompanhamento próximo de liderança técnica e de produto para destravar decisões críticas com segurança.</p>
+          </div>
+          <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DIFERENCIAIS
+  ============================================================ -->
+  <section id="diferenciais">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow reveal">Diferenciais</span>
+          <h2 class="h-section reveal" style="margin-top:18px;">Por que empresas escolhem a Nexora?</h2>
+        </div>
+        <p class="lede reveal">Não vendemos horas de trabalho. Entregamos direção, execução e continuidade sob um único time.</p>
+      </div>
+
+      <div class="diff-list">
+        <div class="diff-row reveal">
+          <span class="diff-num mono">01</span>
+          <div class="diff-row-inner">
+            <div class="diff-body">
+              <h3>Tecnologia aplicada ao negócio</h3>
+              <p>Cada escolha técnica é avaliada pelo impacto real que gera na operação — nunca tecnologia por modismo.</p>
+            </div>
+            <span class="diff-tag">Impacto mensurável</span>
+          </div>
+        </div>
+        <div class="diff-row reveal">
+          <span class="diff-num mono">02</span>
+          <div class="diff-row-inner">
+            <div class="diff-body">
+              <h3>Estratégia baseada em dados</h3>
+              <p>Decisões de produto sustentadas por evidência, não por opinião — com métricas definidas desde o início.</p>
+            </div>
+            <span class="diff-tag">Decisão orientada a dados</span>
+          </div>
+        </div>
+        <div class="diff-row reveal">
+          <span class="diff-num mono">03</span>
+          <div class="diff-row-inner">
+            <div class="diff-body">
+              <h3>Desenvolvimento orientado a resultados</h3>
+              <p>Entregas contínuas conectadas a metas de negócio claras, com visibilidade total do progresso.</p>
+            </div>
+            <span class="diff-tag">Entrega contínua</span>
+          </div>
+        </div>
+        <div class="diff-row reveal">
+          <span class="diff-num mono">04</span>
+          <div class="diff-row-inner">
+            <div class="diff-body">
+              <h3>Experiência centrada no usuário</h3>
+              <p>Cada interface é validada com quem realmente vai usá-la, antes de ir para produção.</p>
+            </div>
+            <span class="diff-tag">Validação real</span>
+          </div>
+        </div>
+        <div class="diff-row reveal">
+          <span class="diff-num mono">05</span>
+          <div class="diff-row-inner">
+            <div class="diff-body">
+              <h3>Segurança e escalabilidade</h3>
+              <p>Arquitetura pensada para crescer sem retrabalho, com práticas sólidas de segurança desde o dia um.</p>
+            </div>
+            <span class="diff-tag">Pronto para escalar</span>
+          </div>
+        </div>
+        <div class="diff-row reveal">
+          <span class="diff-num mono">06</span>
+          <div class="diff-row-inner">
+            <div class="diff-body">
+              <h3>Suporte contínuo</h3>
+              <p>Acompanhamento após o lançamento, com evolução constante em vez de projetos que terminam e são esquecidos.</p>
+            </div>
+            <span class="diff-tag">Relação de longo prazo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROCESSO
+  ============================================================ -->
+  <section id="processo">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow reveal">Como trabalhamos</span>
+          <h2 class="h-section reveal" style="margin-top:18px;">Um processo desenhado para reduzir risco.</h2>
+        </div>
+        <p class="lede reveal">Cinco etapas conectadas — cada uma valida a anterior antes de avançar.</p>
+      </div>
+
+      <div class="process-track">
+        <div class="process-line" aria-hidden="true"></div>
+        <div class="process-steps">
+          <div class="p-step reveal"><span class="p-dot"></span><span class="p-num mono">01</span><h3>Descoberta</h3><p>Imersão no negócio, no usuário e nos dados existentes para mapear o problema real.</p></div>
+          <div class="p-step reveal" style="transition-delay:.08s"><span class="p-dot"></span><span class="p-num mono">02</span><h3>Estratégia</h3><p>Definição de prioridades, métricas de sucesso e um plano de execução claro.</p></div>
+          <div class="p-step reveal" style="transition-delay:.16s"><span class="p-dot"></span><span class="p-num mono">03</span><h3>Construção</h3><p>Desenvolvimento em ciclos curtos, com entregas visíveis e testáveis desde cedo.</p></div>
+          <div class="p-step reveal" style="transition-delay:.24s"><span class="p-dot"></span><span class="p-num mono">04</span><h3>Validação</h3><p>Testes com usuários reais e ajustes antes do lançamento em produção.</p></div>
+          <div class="p-step reveal" style="transition-delay:.32s"><span class="p-dot"></span><span class="p-num mono">05</span><h3>Evolução</h3><p>Acompanhamento contínuo com base em dados de uso reais após o lançamento.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DEPOIMENTOS
+  ============================================================ -->
+  <section id="depoimentos">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow reveal">Depoimentos</span>
+          <h2 class="h-section reveal" style="margin-top:18px;">O que dizem sobre trabalhar com a gente.</h2>
+        </div>
+      </div>
+
+      <div class="testi-wrap reveal">
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-slides" id="testiSlides">
+
+            <div class="testi-slide">
+              <div class="testi-card">
+                <svg class="testi-quote-mark" viewBox="0 0 34 26" fill="none"><path d="M0 26V15.3C0 6.5 5.7 1 14.5 0v6.2c-4.6.8-7 3.4-7.3 7.4h7.3V26H0zm19.5 0V15.3c0-8.8 5.7-14.3 14.5-15.3v6.2c-4.6.8-7 3.4-7.3 7.4h7.3V26H19.5z" fill="currentColor"/></svg>
+                <p class="testi-text">A Nexora entendeu nosso negócio antes de propor qualquer solução técnica. Isso mudou completamente a qualidade das entregas.</p>
+                <div class="testi-person">
+                  <div class="testi-avatar">MC</div>
+                  <div><div class="name">Mariana Castro</div><div class="role">Diretora de Operações, Vetra Logística</div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testi-slide">
+              <div class="testi-card">
+                <svg class="testi-quote-mark" viewBox="0 0 34 26" fill="none"><path d="M0 26V15.3C0 6.5 5.7 1 14.5 0v6.2c-4.6.8-7 3.4-7.3 7.4h7.3V26H0zm19.5 0V15.3c0-8.8 5.7-14.3 14.5-15.3v6.2c-4.6.8-7 3.4-7.3 7.4h7.3V26H19.5z" fill="currentColor"/></svg>
+                <p class="testi-text">Trabalhamos com outras empresas antes, mas nenhuma trouxe tanta clareza sobre prioridade. Sabíamos exatamente onde estávamos em cada etapa.</p>
+                <div class="testi-person">
+                  <div class="testi-avatar">RF</div>
+                  <div><div class="name">Rodrigo Farias</div><div class="role">CTO, Bankly Soluções Financeiras</div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testi-slide">
+              <div class="testi-card">
+                <svg class="testi-quote-mark" viewBox="0 0 34 26" fill="none"><path d="M0 26V15.3C0 6.5 5.7 1 14.5 0v6.2c-4.6.8-7 3.4-7.3 7.4h7.3V26H0zm19.5 0V15.3c0-8.8 5.7-14.3 14.5-15.3v6.2c-4.6.8-7 3.4-7.3 7.4h7.3V26H19.5z" fill="currentColor"/></svg>
+                <p class="testi-text">O suporte contínuo depois do lançamento fez toda a diferença. Sentimos que o projeto continuou sendo prioridade mesmo após ir ao ar.</p>
+                <div class="testi-person">
+                  <div class="testi-avatar">JP</div>
+                  <div><div class="name">Julia Pereira</div><div class="role">Head de Produto, Aurea Saúde</div></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="testi-controls">
+          <div class="testi-dots" id="testiDots" role="tablist" aria-label="Selecionar depoimento"></div>
+          <div class="testi-arrows">
+            <button class="testi-arrow" id="testiPrev" aria-label="Depoimento anterior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="testi-arrow" id="testiNext" aria-label="Próximo depoimento">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ
+  ============================================================ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow reveal">Perguntas frequentes</span>
+          <h2 class="h-section reveal" style="margin-top:18px;">Ainda com dúvidas?</h2>
+        </div>
+      </div>
+
+      <div class="faq-list" id="faqList">
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            Como funciona o processo?
+            <span class="faq-plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Trabalhamos em cinco etapas — descoberta, estratégia, construção, validação e evolução — sempre com entregas visíveis ao longo do caminho, nunca apenas no final do projeto.</div></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            Quanto tempo leva um projeto?
+            <span class="faq-plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Depende do escopo. Projetos de estratégia e diagnóstico costumam levar de 3 a 6 semanas; produtos completos, entre 3 e 6 meses, sempre com marcos intermediários entregues.</div></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            A empresa trabalha com projetos personalizados?
+            <span class="faq-plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Sim. Não utilizamos pacotes fechados — cada proposta é desenhada a partir do diagnóstico real do seu negócio e dos objetivos que você precisa alcançar.</div></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            É possível contratar suporte contínuo?
+            <span class="faq-plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Sim. Após o lançamento, oferecemos planos de evolução contínua com acompanhamento de métricas, manutenção e novas entregas mensais.</div></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            A solução pode crescer junto com minha empresa?
+            <span class="faq-plus" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Sim. Projetamos arquitetura e processos pensando em escala desde o início, para que o crescimento da operação não exija reconstruir o produto do zero.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTATO
+  ============================================================ -->
+  <section id="contato">
+    <div class="wrap">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <span class="eyebrow reveal">Contato</span>
+          <h2 class="h-section reveal" style="margin-top:18px;">Vamos construir o próximo passo do seu negócio.</h2>
+          <p class="lede reveal">Conte um pouco sobre o desafio atual. Respondemos em até um dia útil com os próximos passos.</p>
+
+          <ul class="contact-list reveal">
+            <li><span class="l">Telefone</span><a class="v" href="tel:+551140028922">+55 (11) 4002-8922</a></li>
+            <li><span class="l">E-mail</span><a class="v" href="mailto:contato@nexora.com.br">contato@nexora.com.br</a></li>
+            <li><span class="l">Endereço</span><span class="v">Av. Engenheiro Luís Carlos Berrini, 1.500 — São Paulo, SP</span></li>
+            <li><span class="l">Horário de atendimento</span><span class="v">Segunda a sexta, 9h às 18h</span></li>
+            <li><span class="l">WhatsApp</span><a class="v" href="https://wa.me/5511940028922" target="_blank" rel="noopener">+55 (11) 94002-8922</a></li>
+          </ul>
+        </div>
+
+        <div class="form-card reveal">
+          <form id="contactForm" novalidate>
+            <div class="form-grid">
+              <div class="field" data-field="nome">
+                <label for="f-nome">Nome <span class="req">*</span></label>
+                <input id="f-nome" name="nome" type="text" placeholder="Seu nome completo" autocomplete="name">
+                <span class="field-error">Informe seu nome.</span>
+              </div>
+              <div class="field" data-field="email">
+                <label for="f-email">E-mail <span class="req">*</span></label>
+                <input id="f-email" name="email" type="email" placeholder="voce@empresa.com" autocomplete="email">
+                <span class="field-error">Informe um e-mail válido.</span>
+              </div>
+              <div class="field" data-field="telefone">
+                <label for="f-telefone">Telefone</label>
+                <input id="f-telefone" name="telefone" type="tel" placeholder="(11) 90000-0000" autocomplete="tel">
+                <span class="field-error">Informe um telefone válido.</span>
+              </div>
+              <div class="field" data-field="empresa">
+                <label for="f-empresa">Empresa</label>
+                <input id="f-empresa" name="empresa" type="text" placeholder="Nome da empresa" autocomplete="organization">
+                <span class="field-error">Campo obrigatório.</span>
+              </div>
+              <div class="field full" data-field="assunto">
+                <label for="f-assunto">Assunto <span class="req">*</span></label>
+                <select id="f-assunto" name="assunto">
+                  <option value="" selected disabled>Selecione um assunto</option>
+                  <option>Estratégia Digital</option>
+                  <option>Desenvolvimento</option>
+                  <option>Automação</option>
+                  <option>Experiência do Usuário</option>
+                  <option>Dados &amp; Inteligência</option>
+                  <option>Consultoria</option>
+                  <option>Outro assunto</option>
+                </select>
+                <span class="field-error">Selecione um assunto.</span>
+              </div>
+              <div class="field full" data-field="mensagem">
+                <label for="f-mensagem">Mensagem <span class="req">*</span></label>
+                <textarea id="f-mensagem" name="mensagem" placeholder="Conte um pouco sobre o seu projeto ou desafio atual"></textarea>
+                <span class="field-error">Escreva uma mensagem com pelo menos 10 caracteres.</span>
+              </div>
+            </div>
+
+            <div class="form-foot">
+              <p class="form-note">Ao enviar, você concorda com nossa <a href="#" style="color:var(--ink-2); text-decoration:underline;">Política de Privacidade</a>.</p>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Enviar mensagem</button>
+
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <strong>Mensagem enviada com sucesso.</strong>
+                <p>Obrigado pelo contato — nossa equipe retornará em até um dia útil.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo" aria-label="Nexora — página inicial">
+          <svg class="logo-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="16" cy="16" r="15" stroke="#4f7fff" stroke-width="1.3" opacity="0.5"/>
+            <path d="M9 21V11L23 21V11" stroke="#f4f6fb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9" cy="11" r="1.6" fill="#4f7fff"/>
+            <circle cx="23" cy="21" r="1.6" fill="#4f7fff"/>
+          </svg>
+          NEXORA
+        </a>
+        <p>Estratégia, tecnologia e produto sob a mesma direção — construindo soluções digitais que crescem com o seu negócio.</p>
+        <div class="footer-social">
+          <a class="social-btn" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 8.98h4v12.02H3zM9.5 8.98H13v1.64h.05c.5-.9 1.7-1.84 3.5-1.84 3.74 0 4.43 2.36 4.43 5.43v6.79h-4v-6.02c0-1.44-.03-3.29-2.02-3.29-2.02 0-2.33 1.55-2.33 3.16v6.15h-4z"/></svg></a>
+          <a class="social-btn" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a class="social-btn" href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3l7.5 9.5L3.3 21H6l5.8-6.4L16.5 21H21l-8-10.2L20.4 3H18l-5.4 6L8 3z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Links rápidos</h4>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#processo">Processo</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Soluções</h4>
+        <ul>
+          <li><a href="#solucoes">Estratégia Digital</a></li>
+          <li><a href="#solucoes">Desenvolvimento</a></li>
+          <li><a href="#solucoes">Automação</a></li>
+          <li><a href="#solucoes">Experiência do Usuário</a></li>
+          <li><a href="#solucoes">Dados &amp; Inteligência</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@nexora.com.br">contato@nexora.com.br</a></li>
+          <li><a href="tel:+551140028922">+55 (11) 4002-8922</a></li>
+          <li><a href="#contato">Av. Eng. Luís C. Berrini, 1.500 — SP</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Nexora. Todos os direitos reservados.</p>
+      <div class="footer-legal">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
